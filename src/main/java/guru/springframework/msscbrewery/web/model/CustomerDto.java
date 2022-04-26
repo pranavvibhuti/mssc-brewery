@@ -14,6 +14,4 @@ import lombok.NoArgsConstructor;
 public class CustomerDto {
     private UUID id;
     private String customerName;
-    private String customerType;
-    private Long upc;
 }
