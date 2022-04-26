@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import guru.springframework.msscbrewery.services.CustomerService;
-import guru.springframework.msscbrewery.web.model.Customer;
+import guru.springframework.msscbrewery.web.model.CustomerDto;
 
 @RequestMapping("/api/v1/customer")
 @RestController
@@ -23,7 +23,7 @@ public class CustomerController {
     }
 
     @GetMapping({"/{customerId}"})
-    public ResponseEntity<Customer> getCustomer(@PathVariable("customerId") UUID customerId) {
+    public ResponseEntity<CustomerDto> getCustomer(@PathVariable("customerId") UUID customerId) {
         return new ResponseEntity<> (customerService.getCustomerById(customerId), HttpStatus.OK);
     }
 }

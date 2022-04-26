@@ -2,8 +2,8 @@ package guru.springframework.msscbrewery.services;
 
 import java.util.UUID;
 
-import guru.springframework.msscbrewery.web.model.Customer;
+import guru.springframework.msscbrewery.web.model.CustomerDto;
 
 public interface CustomerService {
-    Customer getCustomerById(UUID customerId);
+    CustomerDto getCustomerById(UUID customerId);
 }

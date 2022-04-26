@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Customer {
+public class CustomerDto {
     private UUID id;
     private String customerName;
     private String customerType;
